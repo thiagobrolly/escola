@@ -1,0 +1,3 @@
+{
+  "extends": "@thiago_brolly/eslint-config/reactJS"
+}
