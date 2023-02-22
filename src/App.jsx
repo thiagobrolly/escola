@@ -1,12 +1,17 @@
-import { Header } from './components/Header';
-import { Login } from './pages/Login';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { RoutesApp } from './routes';
 import { GlobalStyle } from './styles/global';
 
 export function App() {
+  // const notify = () => toast('Wow so easy !');
   return (
     <>
-      <Header />
-      <Login />
+      {/* <button type="button" onClick={notify}>
+        Notify !
+      </button> */}
+      <ToastContainer autoClose={3000} />
+      <RoutesApp />
       <GlobalStyle />
     </>
   );
